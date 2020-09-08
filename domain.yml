@@ -17,7 +17,7 @@ slots:
   cidade:
     type: text
   nome:
-    type: text  
+    type: text
 responses:
   utter_cumprimentar:
   - text: Olá eu sou a Laura, e você como se chama?
@@ -35,16 +35,16 @@ responses:
   utter_informecidade:
   - text: QUal o nome da cidade?
   utter_nomeprefeito:
-  - buttons:   
+  - buttons:
     - payload: /affirm
       title: 👍
     - payload: /deny
       title: 👎
     text: Está satisfeito com essa resposta?
   utter_perguntar_ajuda:
-    - text: "{nome} como posso lhe ajudar?"
-    - text: "Eu posso lhe ajudar em algo, {nome}?"
-    - text: "{nome}, me diga como lhe posso lhe ajudar."
+  - text: '{nome} como posso lhe ajudar?'
+  - text: Eu posso lhe ajudar em algo, {nome}?
+  - text: '{nome}, me diga como lhe posso lhe ajudar.'
 actions:
 - action_get_prefeito
 - utter_cumprimentar

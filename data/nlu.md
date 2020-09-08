@@ -74,6 +74,8 @@
 - Quem comanda a cidade de [São Paulo](cidade)?
 - Quem e o prefeito de [Rio de Janeiro](cidade)?
 - Quem e o prefeito de [Porto Alegre](cidade)?
+- Qual o prefeito de [Belo Horizonte](cidade)?
+
 ## intent:informar_nome
 - Meu nome é [Jorge Alberto](nome)
 - Me chamo de [Melissa Duarte](nome)
@@ -86,3 +88,4 @@
 - [John](nome)
 - [Bruno](nome)
 - [Camila](nome)
+- [Maria](nome)
