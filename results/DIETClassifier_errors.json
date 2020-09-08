@@ -1,0 +1,30 @@
+[
+  {
+    "text": "Quem comanda a cidade de São Paulo?",
+    "entities": [
+      {
+        "start": 25,
+        "end": 34,
+        "value": "São Paulo",
+        "entity": "cidade"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cidade",
+        "start": 25,
+        "end": 34,
+        "confidence_entity": 0.8339969931742789,
+        "value": "São Paulo",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "cidade",
+        "start": 29,
+        "end": 34,
+        "value": "Paulo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

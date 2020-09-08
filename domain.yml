@@ -1,0 +1,56 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- cumprimentar
+- despedir
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- nome_prefeito
+- informar_nome
+entities:
+- cidade
+- nome
+slots:
+  cidade:
+    type: text
+  nome:
+    type: text  
+responses:
+  utter_cumprimentar:
+  - text: Olá eu sou a Laura, e você como se chama?
+  - text: Sou o bot Laura da CGM, pode me falar seu nome?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: ótimo, Qualquer coisa estou aqui!
+  utter_despedir:
+  - text: até logo, {nome}
+  - text: tchau, a gente se vê por ai {nome}
+  utter_informecidade:
+  - text: QUal o nome da cidade?
+  utter_nomeprefeito:
+  - buttons:   
+    - payload: /affirm
+      title: 👍
+    - payload: /deny
+      title: 👎
+    text: Está satisfeito com essa resposta?
+  utter_perguntar_ajuda:
+    - text: "{nome} como posso lhe ajudar?"
+    - text: "Eu posso lhe ajudar em algo, {nome}?"
+    - text: "{nome}, me diga como lhe posso lhe ajudar."
+actions:
+- action_get_prefeito
+- utter_cumprimentar
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_despedir
+- utter_nomeprefeito
+- utter_perguntar_ajuda
