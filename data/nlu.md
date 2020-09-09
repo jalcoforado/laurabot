@@ -89,3 +89,22 @@
 - [Bruno](nome)
 - [Camila](nome)
 - [Maria](nome)
+- Meu nome é [Jorge Alcoforado](nome)
+
+## intent:procurar_servicos
+- Gostaria de saber sobre alguns serviços
+- Você pode me listar o catalago da prefeitura
+- Qual os serviços que a prefeitura possui?
+- A prefeitura tem quais serviços disponíveis?
+- Pode me falar sobre os serviços disponíveis em Fortaleza?
+- Quais os serviços a prefeitura Tem?
+- Fortaleza tem uma catalago de serviços?
+
+## intent:listar_servicos
+- Gostaria de saber sobre [IPTU](servico)
+- Você pode me listar o catalago da prefeitura
+- Qual os serviços que a prefeitura possui?
+- A prefeitura tem quais serviços disponíveis?
+- Pode me falar sobre os serviços disponíveis em Fortaleza?
+- Quais os serviços a prefeitura Tem?
+- Fortaleza tem uma catalago de serviços?

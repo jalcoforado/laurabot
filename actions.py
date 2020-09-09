@@ -91,6 +91,6 @@ class action_get_prefeito(Action):
 
             # resposta = str(resposta)
             print(resposta)
-            resposta_final = resposta["Prefeito"] + " Do partido " + resposta["Partido"]
+            resposta_final = resposta["Prefeito"].values[0] + " do partido " + resposta["Partido"].values[0]
             print(str(resposta_final))
             dispatcher.utter_message(str(resposta_final))

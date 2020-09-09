@@ -10,11 +10,17 @@ intents:
 - mood_unhappy
 - nome_prefeito
 - informar_nome
+- procurar_servicos
+- listar_servicos
 entities:
 - cidade
 - nome
+- servico
+- PER
 slots:
   cidade:
+    type: text
+  grupo_servico:
     type: text
   nome:
     type: text
@@ -42,9 +48,23 @@ responses:
       title: 👎
     text: Está satisfeito com essa resposta?
   utter_perguntar_ajuda:
-  - text: '{nome} como posso lhe ajudar?'
-  - text: Eu posso lhe ajudar em algo, {nome}?
-  - text: '{nome}, me diga como lhe posso lhe ajudar.'
+  - text: '{nome} como posso lhe ajudar? (Por enquanto só sei informar os Prefeitos
+      de Algumas Cidades)'
+  - text: Eu posso lhe ajudar em algo, {nome} (Por enquanto só sei informar os Prefeitos
+      de Algumas Cidades)?
+  - text: '{nome}, me diga como lhe posso lhe ajudar. (Por enquanto só sei informar
+      os Prefeitos de Algumas Cidades)'
+  utter_perguntar_grupo_servico:
+  - text: '{nome}, qual desses grupos você gostaria da listagem?'
+  - text: Escolha um desses grupos, {nome}!
+  - text: '{nome}, diga qual desses grupos de serviço o seu está?'
+  utter_listar_grupos:
+  - buttons:
+    - payload: /saude
+      title: Saude
+    - payload: /educacao
+      title: Educaocao
+    text: Qual o grupo de serviços o seu se encontra?
 actions:
 - action_get_prefeito
 - utter_cumprimentar
@@ -54,3 +74,6 @@ actions:
 - utter_despedir
 - utter_nomeprefeito
 - utter_perguntar_ajuda
+- utter_perguntar_grupo_servico
+- utter_listar_grupos
+- action_get_grupo_servico
