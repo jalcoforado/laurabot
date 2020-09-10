@@ -39,8 +39,8 @@
 * despedir
   - utter_despedir
 
-## Informacoes do prefeito
+<!-- ## Informacoes do prefeito
 * nome_prefeito{"cidade":"São Paulo"}
   - action_get_prefeito 
   - utter_nomeprefeito
-
+ -->

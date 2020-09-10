@@ -75,6 +75,19 @@
 - Quem e o prefeito de [Rio de Janeiro](cidade)?
 - Quem e o prefeito de [Porto Alegre](cidade)?
 - Qual o prefeito de [Belo Horizonte](cidade)?
+- Qual o Prefeito da CIdade de Taboão da Serra
+- Qual o Prefeito da Cidade de Taboão da Serra?
+- Qual o prefeito da Cidade de [São Luís](cidade)
+- Me diga o Prefeito de [Salvador](cidade)?
+- Qual o Prefeito de [São Paulo](cidade)?
+- Qual o prefeito Bauru?
+- Eu quero saber qual o Prefeito de [Fortaleza](cidade)?
+- Sim, qual o prefeito de [Fortaleza](cidade)?
+- Qual o prefeito da Cidade de [Fortaleza](cidade)?
+- Quem é o Prefeito da Cidade de [Florianópolis](cidade)?
+- Qual o prefeito da Cidade de [São Paulo](cidade)?
+- Qual o Prefeito da Cidade de [Porto Velho](cidade)
+- QUal o prefeito de [Salvador](cidade)?
 
 ## intent:informar_nome
 - Meu nome é [Jorge Alberto](nome)
@@ -90,6 +103,19 @@
 - [Camila](nome)
 - [Maria](nome)
 - Meu nome é [Jorge Alcoforado](nome)
+- Me chamo [Laura Duarte](nome)
+- Me chamo [Melissa Duarte](nome)
+- [Melissa Duarte](nome)
+- Me chamo de [Whana](cidade)
+- me chamo de [Whana](cidade)
+- Me chamo de [Mardey](cidade)
+- Me chamo de [Maria Katarina](nome)
+- Me chamo de [Katarina](cidade)
+- Meu nome é [Cesar Rabelo](nome)
+- Me chamo de [Wagner Moura](nome)
+- Me chamo de [Cesar Rabelo](nome)
+- Me chamo de [Jorge Alberto](nome)
+- mel
 
 ## intent:procurar_servicos
 - Gostaria de saber sobre alguns serviços
@@ -108,3 +134,4 @@
 - Pode me falar sobre os serviços disponíveis em Fortaleza?
 - Quais os serviços a prefeitura Tem?
 - Fortaleza tem uma catalago de serviços?
+- meu nome é [Wagner Moura](nome)
