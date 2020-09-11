@@ -1,0 +1,36 @@
+2020-09-11 12:31:56,577 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-09-11 12:32:05,958 [INFO ]  Rasa server is up and running.
+2020-09-11 12:37:21,354 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-09-11 12:37:30,150 [INFO ]  Rasa server is up and running.
+2020-09-11 14:00:36,689 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-09-11 14:00:46,236 [INFO ]  Rasa server is up and running.
+2020-09-11 14:02:51,035 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-09-11 14:03:00,821 [INFO ]  Rasa server is up and running.
+2020-09-11 14:08:52,549 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-09-11 14:09:00,935 [INFO ]  Rasa server is up and running.
+2020-09-11 14:12:23,625 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-09-11 14:12:32,370 [INFO ]  Rasa server is up and running.
+2020-09-11 14:26:24,517 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-09-11 14:26:34,277 [INFO ]  Rasa server is up and running.
+2020-09-11 14:26:57,195 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "c:\users\jorge.alcoforado\projetos\chatbot\laurabot\env\lib\site-packages\sanic\app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "c:\users\jorge.alcoforado\projetos\chatbot\laurabot\env\lib\site-packages\sanic\router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\jorge.alcoforado\projetos\chatbot\laurabot\env\lib\site-packages\sanic\router.py", line 452, in _get
+    raise method_not_supported
+sanic.exceptions.MethodNotSupported: Method GET not allowed for URL /webhooks/rest/webhook
+2020-09-11 14:33:51,806 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-09-11 14:34:00,256 [INFO ]  Rasa server is up and running.
+2020-09-11 14:39:14,933 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-09-11 14:39:24,361 [INFO ]  Rasa server is up and running.
+2020-09-11 14:41:26,213 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-09-11 14:41:35,304 [INFO ]  Rasa server is up and running.
+2020-09-11 14:44:58,270 [ERROR]  Encountered an exception while running action 'action_get_prefeito'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2020-09-11 14:45:20,125 [ERROR]  Encountered an exception while running action 'action_get_prefeito'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2020-09-11 14:52:43,468 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-09-11 14:52:53,014 [INFO ]  Rasa server is up and running.
+2020-09-11 14:53:32,318 [ERROR]  Encountered an exception while running action 'action_get_prefeito'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2020-09-11 15:05:45,094 [ERROR]  Exception occurred while handling uri: unknown
+NoneType: None
