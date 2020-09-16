@@ -32,7 +32,6 @@ from rasa_sdk.executor import CollectingDispatcher
 
 # importe a biblioteca usada para consultar uma URL
 import urllib.request
-
 # importe as funções BeautifulSoup para analisar os dados retornados do site
 from bs4 import BeautifulSoup
 import pandas as pd
@@ -92,5 +91,61 @@ class action_get_prefeito(Action):
             # resposta = str(resposta)
             print(resposta)
             resposta_final = resposta["Prefeito"].values[0] + " do partido " + resposta["Partido"].values[0]
+            print(str(resposta_final))
+            dispatcher.utter_message(str(resposta_final))
+
+
+# especifique o URL
+class action_get_governador(Action):
+    def name(self):
+        return "action_get_governador"
+
+    def run(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> List[Dict[Text, Any]]:
+
+        Estado = tracker.get_slot("estado")
+        print(Estado)
+        Estado = str(Estado).upper()
+        # especifique o URL
+        wiki = "https://pt.wikipedia.org/wiki/Lista_de_governadores_das_unidades_federativas_do_Brasil_(2019%E2%80%932023)"
+        # Consulte o site e retorne o html para a variável 'page'
+        page = urllib.request.urlopen(wiki)
+        # Parse o html na variável 'page' e armazene-o no formato BeautifulSoup
+        soup = BeautifulSoup(page, "html.parser")
+        # Localiza a table dos nomes do prefeito
+        table = soup.find("table", class_="wikitable sortable")
+        A = []
+        B = []
+        C = []
+        D = []
+
+        for row in table.findAll("tr"):  # para tudo que estiver em <tr>
+            cells = row.findAll("td")  # variável para encontrar <td>
+            if len(cells) == 7:  # número de colunas
+                A.append(cells[1].find(text=True).upper())  # iterando sobre cada linha
+                B.append(cells[2].find(text=True))  # iterando sobre cada linha
+                C.append(cells[3].find(text=True))
+                D.append(cells[4].find(text=True))
+
+        df = pd.DataFrame(index=A, columns=["Estado"])
+
+        df["Estado"] = A
+        df["Sigla"] = B
+        df["Governador"] = C
+        df["Partido"] = D
+
+        if Estado == "none":
+            dispatcher.utter_message(text="Estado invalida!")
+
+        else:
+            resposta = df[df["Estado"] == Estado]
+
+            # resposta = str(resposta)
+            print(resposta)
+            resposta_final = resposta["Governador"].values[0] + " do partido " + resposta["Partido"].values[0]
             print(str(resposta_final))
             dispatcher.utter_message(str(resposta_final))

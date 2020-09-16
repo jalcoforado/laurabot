@@ -34,3 +34,35 @@ sanic.exceptions.MethodNotSupported: Method GET not allowed for URL /webhooks/re
 2020-09-11 14:53:32,318 [ERROR]  Encountered an exception while running action 'action_get_prefeito'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
 2020-09-11 15:05:45,094 [ERROR]  Exception occurred while handling uri: unknown
 NoneType: None
+2020-09-14 08:22:41,249 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-09-14 08:22:52,480 [INFO ]  Rasa server is up and running.
+2020-09-14 08:49:42,379 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-09-14 08:49:51,499 [INFO ]  Rasa server is up and running.
+2020-09-14 08:49:51,502 [ERROR]  Unable to start server
+Traceback (most recent call last):
+  File "C:\Users\jorge.alcoforado\AppData\Local\Programs\Python\Python36\lib\asyncio\base_events.py", line 1062, in create_server
+    sock.bind(sa)
+OSError: [WinError 10048] Normalmente é permitida apenas uma utilização de cada endereço de soquete (protocolo/endereço de rede/porta)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\jorge.alcoforado\projetos\chatbot\laurabot\env\lib\site-packages\sanic\server.py", line 895, in serve
+    http_server = loop.run_until_complete(server_coroutine)
+  File "C:\Users\jorge.alcoforado\AppData\Local\Programs\Python\Python36\lib\asyncio\base_events.py", line 484, in run_until_complete
+    return future.result()
+  File "C:\Users\jorge.alcoforado\AppData\Local\Programs\Python\Python36\lib\asyncio\base_events.py", line 1066, in create_server
+    % (sa, err.strerror.lower()))
+OSError: [Errno 10048] error while attempting to bind on address ('0.0.0.0', 5005): normalmente é permitida apenas uma utilização de cada endereço de soquete (protocolo/endereço de rede/porta)
+2020-09-14 09:03:57,535 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-09-14 09:04:06,267 [INFO ]  Rasa server is up and running.
+2020-09-14 09:05:14,847 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-09-14 09:05:23,770 [INFO ]  Rasa server is up and running.
+2020-09-14 09:09:14,316 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-09-14 09:09:23,380 [INFO ]  Rasa server is up and running.
+2020-09-14 13:50:18,798 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-09-14 13:50:28,560 [INFO ]  Rasa server is up and running.
+2020-09-14 13:53:52,241 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-09-14 13:54:01,015 [INFO ]  Rasa server is up and running.
+2020-09-14 13:54:45,342 [ERROR]  Encountered an exception while running action 'action_get_prefeito'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2020-09-14 13:55:02,859 [ERROR]  Encountered an exception while running action 'action_get_prefeito'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.

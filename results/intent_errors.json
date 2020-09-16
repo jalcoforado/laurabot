@@ -1,0 +1,106 @@
+[
+  {
+    "text": "Você pode me listar o catalago da prefeitura",
+    "intent": "procurar_servicos",
+    "intent_prediction": {
+      "name": "listar_servicos",
+      "confidence": 0.5152870416641235
+    }
+  },
+  {
+    "text": "Qual os serviços que a prefeitura possui?",
+    "intent": "listar_servicos",
+    "intent_prediction": {
+      "name": "procurar_servicos",
+      "confidence": 0.5612640380859375
+    }
+  },
+  {
+    "text": "A prefeitura tem quais serviços disponíveis?",
+    "intent": "listar_servicos",
+    "intent_prediction": {
+      "name": "procurar_servicos",
+      "confidence": 0.5325000882148743
+    }
+  },
+  {
+    "text": "Pode me falar sobre os serviços disponíveis em Fortaleza?",
+    "intent": "listar_servicos",
+    "intent_prediction": {
+      "name": "procurar_servicos",
+      "confidence": 0.5602038502693176
+    }
+  },
+  {
+    "text": "Quais os serviços a prefeitura Tem?",
+    "intent": "listar_servicos",
+    "intent_prediction": {
+      "name": "procurar_servicos",
+      "confidence": 0.5634165406227112
+    }
+  },
+  {
+    "text": "Fortaleza tem uma catalago de serviços?",
+    "intent": "listar_servicos",
+    "intent_prediction": {
+      "name": "procurar_servicos",
+      "confidence": 0.5328249335289001
+    }
+  },
+  {
+    "text": "Quem é o vice?",
+    "intent": "vice",
+    "intent_prediction": {
+      "name": "despedir",
+      "confidence": 0.36445310711860657
+    }
+  },
+  {
+    "text": "Quem é que manda depois do Governador",
+    "intent": "vice",
+    "intent_prediction": {
+      "name": "nome_governador",
+      "confidence": 0.9999911785125732
+    }
+  },
+  {
+    "text": "Quem é o seu substituto?",
+    "intent": "vice",
+    "intent_prediction": {
+      "name": "listar_servicos",
+      "confidence": 0.5528038740158081
+    }
+  },
+  {
+    "text": "Qual o nome do Vice?",
+    "intent": "vice",
+    "intent_prediction": {
+      "name": "nome_governador",
+      "confidence": 0.4770108163356781
+    }
+  },
+  {
+    "text": "E o vice é quem?",
+    "intent": "vice",
+    "intent_prediction": {
+      "name": "despedir",
+      "confidence": 0.31070804595947266
+    }
+  },
+  {
+    "text": "Me diga o vice",
+    "intent": "vice",
+    "intent_prediction": {
+      "name": "nome_prefeito",
+      "confidence": 0.46536320447921753
+    }
+  },
+  {
+    "text": "Quem é que manda depois do Prefeito",
+    "intent": "vice",
+    "intent_prediction": {
+      "name": "nome_prefeito",
+      "confidence": 0.9999176263809204
+    }
+  }
+]

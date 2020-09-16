@@ -1,16 +1,31 @@
-## caminho feliz
+## caminho Prefeito
 * cumprimentar
-  - utter_cumprimentar
-  - slot{"nome":"jorge alberto"}
+  - utter_cumprimentar 
 * informar_nome{"nome": "jorge alberto"}
   - utter_perguntar_ajuda 
-  - slot{"cidade":"São Paulo"}  
 * nome_prefeito{"cidade":"São Paulo"}
   - action_get_prefeito 
   - utter_nomeprefeito
+* vice_prefeito
+  - utter_viceprefeito 
 * affirm
   - utter_happy
   - utter_despedir
+
+
+## caminho Governador
+* cumprimentar
+  - utter_cumprimentar 
+* informar_nome{"nome": "jorge alberto"}
+  - utter_perguntar_ajuda 
+* nome_governador{"estado":"São Paulo"}
+  - action_get_governador 
+  - utter_nomegovernador
+* vice_governador
+  - utter_vicegovernador
+* affirm
+  - utter_happy
+  - utter_despedir  
 
 <!-- ## Procurando Serviços
 * cumprimentar
@@ -26,7 +41,7 @@
 * affirm
   - utter_happy
 
-## sad path 2
+<!-- ## sad path 2
 * cumprimentar
   - utter_cumprimentar
 * mood_unhappy
@@ -37,10 +52,25 @@
 
 ## dando tchau
 * despedir
-  - utter_despedir
+  - utter_despedir -->
 
 <!-- ## Informacoes do prefeito
 * nome_prefeito{"cidade":"São Paulo"}
   - action_get_prefeito 
   - utter_nomeprefeito
  -->
+
+<!-- ## interactive_story_1
+* cumprimentar
+    - utter_cumprimentar
+* informar_nome{"nome": "Euristenho"}
+    - slot{"nome": "Euristenho"}
+    - utter_perguntar_ajuda
+* nome_prefeito{"cidade": "Mossoró"}
+    - slot{"cidade": "Mossoró"}
+    - action_get_prefeito
+    - utter_nomeprefeito
+* affirm
+    - utter_happy
+    - utter_despedir -->
+

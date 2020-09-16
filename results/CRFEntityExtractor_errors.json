@@ -1,0 +1,168 @@
+[
+  {
+    "text": "quem é o prefeito da Cidade de Nova York?",
+    "entities": [
+      {
+        "start": 31,
+        "end": 40,
+        "value": "Nova York",
+        "entity": "cidade"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "estado",
+        "start": 31,
+        "end": 40,
+        "confidence_entity": 0.4592582579669317,
+        "value": "Nova York",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "cidade",
+        "start": 31,
+        "end": 40,
+        "value": "Nova York",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Quem e o prefeito de Rio de Janeiro?",
+    "entities": [
+      {
+        "start": 21,
+        "end": 35,
+        "value": "Rio de Janeiro",
+        "entity": "cidade"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "estado",
+        "start": 21,
+        "end": 35,
+        "confidence_entity": 0.45628665957243825,
+        "value": "Rio de Janeiro",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "cidade",
+        "start": 21,
+        "end": 35,
+        "value": "Rio de Janeiro",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Qual o governador da Cidade de São Luís",
+    "entities": [
+      {
+        "start": 31,
+        "end": 39,
+        "value": "São Luís",
+        "entity": "estado"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cidade",
+        "start": 31,
+        "end": 39,
+        "confidence_entity": 0.46824326989627396,
+        "value": "São Luís",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "estado",
+        "start": 31,
+        "end": 39,
+        "value": "São Luís",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Qual o governador de São Paulo?",
+    "entities": [
+      {
+        "start": 21,
+        "end": 30,
+        "value": "São Paulo",
+        "entity": "estado"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cidade",
+        "start": 21,
+        "end": 30,
+        "confidence_entity": 0.5725304218877066,
+        "value": "São Paulo",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "estado",
+        "start": 21,
+        "end": 30,
+        "value": "São Paulo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Qual o governador do Estado de São Paulo?",
+    "entities": [
+      {
+        "start": 31,
+        "end": 40,
+        "value": "São Paulo",
+        "entity": "estado"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cidade",
+        "start": 31,
+        "end": 40,
+        "confidence_entity": 0.5725073850217909,
+        "value": "São Paulo",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "estado",
+        "start": 31,
+        "end": 40,
+        "value": "São Paulo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Quem é o Governador do CearáCeará?",
+    "entities": [
+      {
+        "start": 23,
+        "end": 28,
+        "value": "Ceará",
+        "entity": "estado"
+      },
+      {
+        "start": 28,
+        "end": 33,
+        "value": "Ceará",
+        "entity": "estado"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "estado",
+        "start": 23,
+        "end": 33,
+        "value": "CearáCeará",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

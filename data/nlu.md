@@ -75,19 +75,35 @@
 - Quem e o prefeito de [Rio de Janeiro](cidade)?
 - Quem e o prefeito de [Porto Alegre](cidade)?
 - Qual o prefeito de [Belo Horizonte](cidade)?
-- Qual o Prefeito da CIdade de Taboão da Serra
-- Qual o Prefeito da Cidade de Taboão da Serra?
 - Qual o prefeito da Cidade de [São Luís](cidade)
 - Me diga o Prefeito de [Salvador](cidade)?
 - Qual o Prefeito de [São Paulo](cidade)?
-- Qual o prefeito Bauru?
+- Qual o prefeito [Bauru](cidade)?
 - Eu quero saber qual o Prefeito de [Fortaleza](cidade)?
 - Sim, qual o prefeito de [Fortaleza](cidade)?
-- Qual o prefeito da Cidade de [Fortaleza](cidade)?
 - Quem é o Prefeito da Cidade de [Florianópolis](cidade)?
 - Qual o prefeito da Cidade de [São Paulo](cidade)?
 - Qual o Prefeito da Cidade de [Porto Velho](cidade)
-- QUal o prefeito de [Salvador](cidade)?
+
+## intent:nome_governador
+- quem é o Governador da Cidade de [Nova York](estado)?
+- qual é o governador de [Texas](estado)?
+- a governador de [Amazonas](estado) é comandado por?
+- Quem comanda a estado de [Ceará](estado)?
+- Quem comanda a estado de [Pará](estado)?
+- Quem e o governador de [Rio de Janeiro](estado)?
+- Quem e o governador de [Rio Grande do Sul](estado)?
+- Qual o governador de [Minas Gerais](estado)?
+- Qual o governador da Cidade de [São Luís](estado)
+- Me diga o governador de [Bahia](estado)?
+- Qual o governador de [São Paulo](estado)?
+- Qual o governador [Minas Gerais](estado)?
+- Eu quero saber qual o governador de [Pernambuco](estado)?
+- Sim, qual o governador de [Acre](estado)?
+- Quem é o governador do Estado  de [Santa Catarina](estado)?
+- Qual o governador do Estado de [São Paulo](estado)?
+- Qual o governador do Estado de [Roraima](estado)
+- QUal o governador da [Bahia](estado)?
 
 ## intent:informar_nome
 - Meu nome é [Jorge Alberto](nome)
@@ -98,24 +114,16 @@
 - todos me chamam de [Milena Duarte](nome)
 - [Paulo Cesar](nome) é nome de batismo
 - minha graça é [Cesar Rabelo](nome)
-- [John](nome)
-- [Bruno](nome)
-- [Camila](nome)
 - [Maria](nome)
 - Meu nome é [Jorge Alcoforado](nome)
 - Me chamo [Laura Duarte](nome)
-- Me chamo [Melissa Duarte](nome)
 - [Melissa Duarte](nome)
-- Me chamo de [Whana](cidade)
-- me chamo de [Whana](cidade)
-- Me chamo de [Mardey](cidade)
-- Me chamo de [Maria Katarina](nome)
-- Me chamo de [Katarina](cidade)
-- Meu nome é [Cesar Rabelo](nome)
-- Me chamo de [Wagner Moura](nome)
-- Me chamo de [Cesar Rabelo](nome)
-- Me chamo de [Jorge Alberto](nome)
-- mel
+- Me chamo de [Whana](nome)
+- [mel](nome)
+- [Patricia](nome)
+- [Euristenho](nome)
+- [Wagner Moura](nome)
+
 
 ## intent:procurar_servicos
 - Gostaria de saber sobre alguns serviços
@@ -134,4 +142,19 @@
 - Pode me falar sobre os serviços disponíveis em Fortaleza?
 - Quais os serviços a prefeitura Tem?
 - Fortaleza tem uma catalago de serviços?
-- meu nome é [Wagner Moura](nome)
+
+## intent:vice_governador 
+- Quem é o vice?
+- Quem é que manda depois do Governador
+- Quem é o seu substituto?
+- Qual o nome do Vice?
+- E o vice é quem?
+- Me diga o vice
+
+## intent:vice_prefeito
+- Quem é o vice?
+- Quem é que manda depois do Prefeito
+- Quem é o seu substituto?
+- Qual o nome do Vice?
+- E o vice é quem?
+- Me diga o vice

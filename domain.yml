@@ -1,52 +1,66 @@
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+actions:
+- action_get_governador
+- action_get_grupo_servico
+- action_get_prefeito
+- utter_cheer_up
+- utter_cumprimentar
+- utter_despedir
+- utter_did_that_help
+- utter_happy
+- utter_listar_grupos
+- utter_nomegovernador
+- utter_nomeprefeito
+- utter_perguntar_ajuda
+- utter_perguntar_grupo_servico
+- utter_vicegovernador
+- utter_viceprefeito
+entities:
+- PER
+- cidade
+- estado
+- nome
+- servico
 intents:
+- vice_prefeito
+- nome_governador
+- informar_nome
+- nome_prefeito
+- vice_governador
 - cumprimentar
-- despedir
 - affirm
+- despedir
 - deny
 - mood_great
 - mood_unhappy
-- nome_prefeito
-- informar_nome
 - procurar_servicos
 - listar_servicos
-entities:
-- cidade
-- nome
-- servico
-- PER
-slots:
-  cidade:
-    type: text
-  grupo_servico:
-    type: text
-  nome:
-    type: text
 responses:
-  utter_cumprimentar:
-  - text: Olá eu sou a Laura, e você como se chama?
-  - text: Sou o bot Laura da CGM, pode me falar seu nome?
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
     text: 'Here is something to cheer you up:'
+  utter_cumprimentar:
+  - text: Olá eu sou a Laura, e você como se chama?
+  - text: Sou o bot Laura da CGM, pode me falar seu nome?
+  utter_despedir:
+  - text: até logo, {nome}
+  - text: tchau, a gente se vê por ai {nome}
   utter_did_that_help:
   - text: Did that help you?
   utter_happy:
   - text: ótimo, Qualquer coisa estou aqui!
-  utter_despedir:
-  - text: até logo, {nome}
-  - text: tchau, a gente se vê por ai {nome}
   utter_informecidade:
   - text: QUal o nome da cidade?
-  utter_nomeprefeito:
+  utter_listar_grupos:
   - buttons:
-    - payload: /affirm
-      title: 👍
-    - payload: /deny
-      title: 👎
-    text: Está satisfeito com essa resposta?
+    - payload: /saude
+      title: Saude
+    - payload: /educacao
+      title: Educaocao
+    text: Qual o grupo de serviços o seu se encontra?
+  utter_nomegovernador:
+  - text: Deseja Saber algo mais sobre o Estado {estado}?
+  utter_nomeprefeito:
+  - text: Deseja Saber algo mais sobre a Cidade {cidade}?
   utter_perguntar_ajuda:
   - text: '{nome} como posso lhe ajudar? (Por enquanto só sei informar os Prefeitos
       de Algumas Cidades)'
@@ -58,22 +72,19 @@ responses:
   - text: '{nome}, qual desses grupos você gostaria da listagem?'
   - text: Escolha um desses grupos, {nome}!
   - text: '{nome}, diga qual desses grupos de serviço o seu está?'
-  utter_listar_grupos:
-  - buttons:
-    - payload: /saude
-      title: Saude
-    - payload: /educacao
-      title: Educaocao
-    text: Qual o grupo de serviços o seu se encontra?
-actions:
-- action_get_prefeito
-- utter_cumprimentar
-- utter_cheer_up
-- utter_did_that_help
-- utter_happy
-- utter_despedir
-- utter_nomeprefeito
-- utter_perguntar_ajuda
-- utter_perguntar_grupo_servico
-- utter_listar_grupos
-- action_get_grupo_servico
+  utter_vicegovernador:
+  - text: o Vice do estado {estado} pode ser visto no google seu preguiçoso ?
+  utter_viceprefeito:
+  - text: o Vice da cidade {cidade} pode ser visto no google seu preguiçoso ?
+session_config:
+  carry_over_slots_to_new_session: true
+  session_expiration_time: 60
+slots:
+  cidade:
+    type: text
+  estado:
+    type: text
+  grupo_servico:
+    type: text
+  nome:
+    type: text
